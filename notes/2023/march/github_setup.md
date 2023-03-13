@@ -1,34 +1,45 @@
 # How to setup your Github Repository - mac version
 
 
-#  prereqisites:  
+#  Prereqisites:  
     - github account
     - xcode command line tools
     - homebrew
     - git
 
 
-first you'll need to install xcode command line tools in the terminal to begin the installation process. 
-xcode-select --install
+# First 
+
+You'll need to install xcode command line tools in the terminal to begin the installation process.
+
+> ``` xcode-select --install```
 
 You'll see a panel that asks you to install Xcode Command Line Tools.
 Select install to begin the download and install process.
 
-Note Xcode command line tools can take a while to download and install.  Take a break, check back in 15 mins... ish.. 
-verify the install 
-xcode-select -p
-output => /Library/Developer/CommandLineTools
+*Note Xcode command line tools can take a while to download and install.  Take a break, check back in 15 mins... ish.. 
+
+# Verify the install 
+
+> ``` xcode-select -p```
+
+> ```output => /Library/Developer/CommandLineTools```
 
 
-next very useful and popular Mac package manager. Homebrew
-first, check if Homebrew is already installed.
-brew
+# Homebrew
+
+A very useful and popular Mac package manager. Homebrew
+Lets check if Homebrew is already installed.
+
+Type the command below into the terminal
+> ```brew```
 
 If Honebrew is not installed, you'll see:
 command not found: brew
 
-next use this script from Homebrew website https://brew.sh/
-/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
+Next use this script from Homebrew website https://brew.sh/
+
+> ```/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)```
 
 This will start the install process.
 Next you'll be prompted for a password. This is the passowrd you sue to sign into your Mac.
@@ -37,50 +48,70 @@ If Xcode command line tools is not installed a prompt will show "The Xcode Comma
 Press enter when prompted and Homebrew will begin to install.
 Note Homebrew can take a while to download and install.  Take a break, check back in 15 mins... ish.. 
 
-Check to see if Homebrew installed properly
-brew doctor
+Run the command below to check to see if Homebrew installed properly
+
+> ```brew doctor```
 
 You should see:
-Your system is ready to brew.
+
+> ```Your system is ready to brew.```
 
 
+
+# Configure Git
 
 Next you'll install git and gitHub via homebrew
-brew install gitHub
+
+> ```brew install gitHub```
 
 After install, check to see if git installed properly.
-git --version
 
-output /usr/local/bin/git
+> ```git --version```
+
+> ```output /usr/local/bin/git```
 
 Next, lets define your Git user (should be the same name and email you use for gitHub)
 
-git config --global user.name "Your name here"
-git config --global user.email "your_email@email.com"
+> ```git config --global user.name "Your name here"```
+
+> ```git config --global user.email "your_email@email.com"```
 
 This will get added to your .gitconfig file.
  
 
-I chose to use the SSH method.  By storing a token generated on github, storing that key in the keychain.
+ GitHub recommends using HTTPS to push code to  your repositories.  To prevent git from asking for your username and password everytime you push a commit you can cache your credentials by rugging the following command.
+
+ > ```git config --gloval credential.helper osxkeychain
+
+ I chose to use the SSH method. 
 https://docs.github.com/en/authentication/connecting-to-github-with-ssh/generating-a-new-ssh-key-and-adding-it-to-the-ssh-agent
 
 Heres an arcircle to help you make your own decision.. 
 https://www.howtogeek.com/devops/should-you-use-https-or-ssh-for-git/
 
-if you perfer you can chose the https method.. (provide link)
+If you perfer you can chose the https. 
+
+> ```https://docs.github.com/en/get-started/getting-started-with-git/about-remote-repositories#cloning-with-https-urls-recommended```
+
+# SSH Config for GitHub
+
+
 
 Generate a new SSH key
+
 If you don't have an SSH key you need to generate one. To do that you need to run the commands below, and make sure to substitute the placeholder with your email. The default settings are preferred, so when you're asked to enter a file in which to save the key, just press Enter to continue.
 
-ssh-keygen -t rsa -C "your_email@example.com"
+> ```ssh-keygen -t rsa -C "your_email@example.com"```
+
 Creates a new ssh key, using the provided email as a label
 
 
 Add your SSH key to the ssh-agent
 Run the following commands to add your SSH key to the ssh-agent.
 
-eval "$(ssh-agent -s)"
-> Agent pid 59566
+> ```eval "$(ssh-agent -s)"```
+> 
+> ```Agent pid 59566```
 
 If you're running macOS Sierra 10.12.2 or later, you will need to modify your ~/.ssh/config file to automatically load keys into the ssh-agent and store passphrases in your keychain:
 
