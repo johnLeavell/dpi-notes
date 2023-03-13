@@ -1,9 +1,0 @@
-0000000000000000000000000000000000000000 588d10b7f02450490acffd4474c23f0cce437cbd DPI-PTTL-64 <dpi-pttl-64@DPI-PTTL-64s-MacBook-Pro.local> 1678316408 -0600	commit (initial): first commit
-588d10b7f02450490acffd4474c23f0cce437cbd 0000000000000000000000000000000000000000 DPI-PTTL-64 <johnleavell@gmail.com> 1678316723 -0600	Branch: renamed refs/heads/main to refs/heads/main
-588d10b7f02450490acffd4474c23f0cce437cbd 588d10b7f02450490acffd4474c23f0cce437cbd DPI-PTTL-64 <johnleavell@gmail.com> 1678316723 -0600	Branch: renamed refs/heads/main to refs/heads/main
-588d10b7f02450490acffd4474c23f0cce437cbd 0000000000000000000000000000000000000000 DPI-PTTL-64 <johnleavell@gmail.com> 1678470868 -0600	Branch: renamed refs/heads/main to refs/heads/main
-588d10b7f02450490acffd4474c23f0cce437cbd 588d10b7f02450490acffd4474c23f0cce437cbd DPI-PTTL-64 <johnleavell@gmail.com> 1678470868 -0600	Branch: renamed refs/heads/main to refs/heads/main
-588d10b7f02450490acffd4474c23f0cce437cbd e619fd3303a8c79527b83956be0d9341f04fc677 DPI-PTTL-64 <johnleavell@gmail.com> 1678471552 -0600	commit: added 3_10_notes
-e619fd3303a8c79527b83956be0d9341f04fc677 1d55138a41984f9ec9201f68967f622ba1fdfb12 DPI-PTTL-64 <johnleavell@gmail.com> 1678478993 -0600	commit: added scratch folder and test file
-1d55138a41984f9ec9201f68967f622ba1fdfb12 84c26a697a1ee4b7612c83ae3a8892fda935b0fc DPI-PTTL-64 <johnleavell@gmail.com> 1678481690 -0600	commit: added extra ruby notes
-84c26a697a1ee4b7612c83ae3a8892fda935b0fc bf45e7a3a54736ffd2019784deb60e5314022104 DPI-PTTL-64 <johnleavell@gmail.com> 1678715711 -0500	pull: Fast-forward
