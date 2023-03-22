@@ -1,6 +1,6 @@
-These are some of the keyboard shortcuts I use in iTerm, a popular terminal emulator for macOS. By using these shortcuts, I'm able to navigate through my terminal windows quickly and efficiently, which helps me be more productive.
+These are some of the keyboard shortcuts I use in [iTerm2](https://iterm2.com/), a popular terminal emulator for macOS. By using these shortcuts (not all of them....), I'm able to navigate through my terminal windows quickly and efficiently, which helps me be more productive.
 
-# iTerm Keyboard Shortcuts
+# iTerm2 Keyboard Shortcuts
 
 ## General
 
@@ -57,4 +57,5 @@ These are some of the keyboard shortcuts I use in iTerm, a popular terminal emul
 
 
 
-I hope you find these keyboard shortcuts helpful. Of course, there are many other shortcuts you can use in iTerm, and you can also customize them to fit your personal preferences. If you have any suggestions or feedback, feel free to let me know. Happy coding!
+I hope you find these keyboard shortcuts helpful. Of course, there are many other shortcuts you can use in iTerm2, and you can also customize them to fit your personal preferences. If you have any suggestions or feedback, feel free to let me know. 
+Cheers!
